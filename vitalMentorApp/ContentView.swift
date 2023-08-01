@@ -13,7 +13,9 @@ struct ContentView: View {
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
 
                 VStack {
-                    Text("VitalMentor")
+                    Text("Our Vital Mentor")
+                    Text("heyyy")
+
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .font(.system(size: 55))
@@ -22,14 +24,14 @@ struct ContentView: View {
                     
                     // Navigation links to the next screen
                     NavigationLink(destination: bookrecs()) {
-                        Image("star 1")
+                        Image("star")
                             .resizable()
                             .frame(width: 50.0, height: 50.0)
                             .padding(-10.0)
                     }
                     
                     NavigationLink(destination: bookrecs()) {
-                        Image("star 1")
+                        Image("star")
                             .resizable()
                             .frame(width: 50.0, height: 50.0)
                             .padding(.top, 50.0)
@@ -37,19 +39,19 @@ struct ContentView: View {
                         
                     }
                     NavigationLink(destination: bookrecs()) {
-                        Image("star 1")
+                        Image("star")
                             .resizable()
                             .frame(width: 50.0, height: 50.0)
                             .padding(10.0)
                         .padding(-50.0)                    }
                     NavigationLink(destination: bookrecs()) {
-                        Image("star 1")
+                        Image("star")
                             .resizable()
                             .frame(width: 50.0, height: 50.0)
                             .padding(.top, 20.0)
                         .padding(.leading, 0.0)                    }
                     NavigationLink(destination: bookrecs()) {
-                        Image("star 1")
+                        Image("star")
                             .resizable()
                             .frame(width: 50.0, height: 50.0)
                             .padding(.top, 40.0)
