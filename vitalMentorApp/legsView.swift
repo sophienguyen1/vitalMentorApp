@@ -12,10 +12,6 @@ struct legsView: View {
     var body: some View {
             
             ZStack {
-                Image("legs")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .edgesIgnoringSafeArea(.all)
                 
                 VStack {
                     Text("LEGS")
@@ -101,6 +97,16 @@ struct legsView: View {
             }
             
             .padding(2.0)
+            .background(
+                LinearGradient(gradient: Gradient(colors: [
+                    Color(red: 0.95, green: 0.92, blue: 0.98),
+                    Color(red: 0.85, green: 0.78, blue: 0.94),
+                    Color(red: 0.8, green: 0.75, blue: 0.95),
+                    Color(red: 0.85, green: 0.78, blue: 0.94),
+                    Color(red: 0.95, green: 0.92, blue: 0.98)
+                ]), startPoint: .top, endPoint: .bottom)
+                .edgesIgnoringSafeArea(.all)
+            )
         
         }
 

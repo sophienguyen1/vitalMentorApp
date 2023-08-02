@@ -34,28 +34,32 @@ struct ContentView: View {
                             .frame(width: 50.0, height: 50.0)
                             .padding(-10.0)
                     }
-                    
+                    HStack{
                     NavigationLink(destination: absView()) {
                         Image("star")
                             .resizable()
-                            .frame(width: 50.0, height: 50.0)
-                            .padding(.top, 50.0)
-                            .padding(.leading, 110.0)
+                            .contentShape(Rectangle())
+                            .frame(width: 50, height: 50)
+                            .padding(.top, 70.0)
+                            .padding(.leading, 0.0)
                         
                     }
-                    NavigationLink(destination: absView()) {
-                        Image("star")
-                            .resizable()
-                            .frame(width: 50.0, height: 50.0)
-                            .padding(10.0)
-                        .padding(-50.0)                    }
+                        NavigationLink(destination: JournalView()) {
+                            Image("star")
+                            
+                                .resizable()
+                                .frame(width: 50.0, height: 50.0)
+                                .padding(.trailing, 70.0)
+                            .padding(0.0)
+                            
+                        }        }
                     NavigationLink(destination: absView()) {
                         Image("star")
                             .resizable()
                             .frame(width: 50.0, height: 50.0)
                             .padding(.top, 20.0)
                         .padding(.leading, 0.0)                    }
-                    NavigationLink(destination: legsView()) {
+                    NavigationLink(destination: absView()) {
                         Image("star")
                             .resizable()
                             .frame(width: 50.0, height: 50.0)
