@@ -18,7 +18,6 @@ struct bookrecs: View {
                 }
             } // closing v stack
         } // closing nav stack
-        Text("Hello, World!")
     } // closing some view
 } // closing struct
 
