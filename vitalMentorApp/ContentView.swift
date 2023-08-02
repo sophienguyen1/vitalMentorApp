@@ -1,3 +1,10 @@
+//
+//  ContentView.swift
+//  vitalmentorCOPYYY
+//
+//  Created by natali oleinik on 8/1/23.
+//
+
 import SwiftUI
 
 struct ContentView: View {
@@ -13,9 +20,7 @@ struct ContentView: View {
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
 
                 VStack {
-                    Text("Our Vital Mentor")
-                    Text("heyyy")
-
+                    Text("VitalMentor")
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .font(.system(size: 55))
@@ -30,7 +35,7 @@ struct ContentView: View {
                             .padding(-10.0)
                     }
                     
-                    NavigationLink(destination: bookrecs()) {
+                    NavigationLink(destination: absView()) {
                         Image("star")
                             .resizable()
                             .frame(width: 50.0, height: 50.0)
@@ -38,19 +43,19 @@ struct ContentView: View {
                             .padding(.leading, 110.0)
                         
                     }
-                    NavigationLink(destination: bookrecs()) {
+                    NavigationLink(destination: absView()) {
                         Image("star")
                             .resizable()
                             .frame(width: 50.0, height: 50.0)
                             .padding(10.0)
                         .padding(-50.0)                    }
-                    NavigationLink(destination: bookrecs()) {
+                    NavigationLink(destination: absView()) {
                         Image("star")
                             .resizable()
                             .frame(width: 50.0, height: 50.0)
                             .padding(.top, 20.0)
                         .padding(.leading, 0.0)                    }
-                    NavigationLink(destination: bookrecs()) {
+                    NavigationLink(destination: legsView()) {
                         Image("star")
                             .resizable()
                             .frame(width: 50.0, height: 50.0)

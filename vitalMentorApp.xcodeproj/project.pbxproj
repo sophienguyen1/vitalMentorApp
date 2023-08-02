@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AFE864D02A7AC3EF005C5A47 /* absView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE864CF2A7AC3EF005C5A47 /* absView.swift */; };
+		AFE864D22A7AC69C005C5A47 /* legsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE864D12A7AC69C005C5A47 /* legsView.swift */; };
 		BDFE99662A799329000E190C /* vitalMentorAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFE99652A799329000E190C /* vitalMentorAppApp.swift */; };
 		BDFE99682A799329000E190C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFE99672A799329000E190C /* ContentView.swift */; };
 		BDFE996A2A79932B000E190C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDFE99692A79932B000E190C /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AFE864CF2A7AC3EF005C5A47 /* absView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = absView.swift; sourceTree = "<group>"; };
+		AFE864D12A7AC69C005C5A47 /* legsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = legsView.swift; sourceTree = "<group>"; };
 		BDFE99622A799329000E190C /* vitalMentorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vitalMentorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFE99652A799329000E190C /* vitalMentorAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vitalMentorAppApp.swift; sourceTree = "<group>"; };
 		BDFE99672A799329000E190C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,7 +68,9 @@
 				BDFE99652A799329000E190C /* vitalMentorAppApp.swift */,
 				BDFE99732A799336000E190C /* bookrecs.swift */,
 				BDFE99752A79937F000E190C /* questionOne.swift */,
+				AFE864D12A7AC69C005C5A47 /* legsView.swift */,
 				BDFE99672A799329000E190C /* ContentView.swift */,
+				AFE864CF2A7AC3EF005C5A47 /* absView.swift */,
 				BDFE99692A79932B000E190C /* Assets.xcassets */,
 				BDFE996B2A79932B000E190C /* Preview Content */,
 			);
@@ -155,6 +161,8 @@
 				BDFE99762A79937F000E190C /* questionOne.swift in Sources */,
 				BDFE997A2A799468000E190C /* questionThree.swift in Sources */,
 				BDFE99662A799329000E190C /* vitalMentorAppApp.swift in Sources */,
+				AFE864D02A7AC3EF005C5A47 /* absView.swift in Sources */,
+				AFE864D22A7AC69C005C5A47 /* legsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
