@@ -26,7 +26,6 @@ struct questionOne: View {
                 }
             }
         }
-        Text("Hello, World!")
     }
 }
 
