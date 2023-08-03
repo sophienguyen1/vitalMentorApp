@@ -46,8 +46,6 @@ struct bookrecs: View {
                             .padding(.horizontal, 25.0)
                             .padding(.vertical, 5.0)
                             .padding(.trailing, 15.0)
-
-                        
                             .frame(width: 200.0, height: 50.0)
                             .background(
                                 RoundedRectangle(cornerRadius: 15)
@@ -60,7 +58,7 @@ struct bookrecs: View {
                                 )
                     }
                 }
-                .padding(.bottom, 50) // closing nav stack
+                .padding(.bottom, 80) // closing nav stack
 
             }
         } // closing ZStack

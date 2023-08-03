@@ -1,35 +1,29 @@
-//
-//  questionOne.swift
-//  vitalMentorApp
-//
-//  Created by scholar on 8/1/23.
-//
-
 import SwiftUI
 
 struct questionOne: View {
+    @State private var selectedBook: String = ""
     @State private var dystopianBooks = ["The Hunger Games", "The Maze Runner"]
     @State private var romanceBooks = ["It Ends With Us", "Pride & Prejudice"]
     @State private var mysteryBooks = ["One of Us is Lying", "The Apartment"]
-    
+
     func pickBookD() -> String {
-        let randomDystopian = Int.random(in: 0..<2)
+        let randomDystopian = Int.random(in: 0..<dystopianBooks.count)
         let dystopianBook = dystopianBooks[randomDystopian]
         return dystopianBook
     } //dystopian
-    
+
     func pickBookR() -> String {
-        let randomRomance = Int.random(in: 0..<2)
+        let randomRomance = Int.random(in: 0..<romanceBooks.count)
         let romanceBook = romanceBooks[randomRomance]
         return romanceBook
     } // romance
-    
+
     func pickBookM() -> String {
-        let randomMystery = Int.random(in: 0..<2)
+        let randomMystery = Int.random(in: 0..<mysteryBooks.count)
         let mysteryBook = mysteryBooks[randomMystery]
         return mysteryBook
     } // mystery
-    
+
     var body: some View {
         ZStack {
             LinearGradient(gradient: Gradient(colors: [
@@ -40,9 +34,9 @@ struct questionOne: View {
                 Color(red: 0.95, green: 0.92, blue: 0.98)
             ]), startPoint: .top, endPoint: .bottom)
             .edgesIgnoringSafeArea(.all)
-            
+
             NavigationStack {
-                
+
                 VStack {
                     Text("What is your favorite genre?")
                         .fontWeight(.bold)
@@ -52,38 +46,41 @@ struct questionOne: View {
                         .padding(.top, 50)
                         .padding (.bottom, 20)
                         .padding(.trailing, 15.0)
-                    
+
                     Button("Dystopian") {
-                        let randomBookD = pickBookD()
-                        print(randomBookD)
+                        selectedBook = pickBookD()
                     }
                     .font(.title2)
                     .buttonStyle(.borderedProminent)
-                    .tint(.purple)
-                    
+                    .tint(.black)
+
                     Button("Romance") {
-                        let randomBookR = pickBookR()
-                        print(randomBookR)
+                        selectedBook = pickBookR()
                     }
                     .font(.title2)
                     .buttonStyle(.borderedProminent)
-                    .tint(.purple)
-                    
+                    .tint(.black)
+
                     Button("Mystery") {
-                        let randomBookM = pickBookM()
-                        print(randomBookM)
+                        selectedBook = pickBookM()
                     }
                     .font(.title2)
                     .buttonStyle(.borderedProminent)
-                    .tint(.purple)
-                    
+                    .tint(.black)
+
                     .padding (.bottom, 20)
                     .padding (.bottom, 40)
 
+                    Text("Selected Book: \(selectedBook)")
+                        .fontWeight(.bold)
+                        .foregroundColor(.black)
+                        .font(.title)
+                        .padding(.top, 20)
+
                 } //closing vstack
-                
+
             } // closing nav stack
-            
+
         }}
     //some view stack
 }
