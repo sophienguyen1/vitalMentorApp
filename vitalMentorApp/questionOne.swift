@@ -80,7 +80,7 @@ struct questionOne: View {
                 } //closing vstack
 
             } // closing nav stack
-
+            .navigationBarHidden(true)
         }}
     //some view stack
 }

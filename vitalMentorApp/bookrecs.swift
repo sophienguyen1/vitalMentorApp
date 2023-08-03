@@ -39,6 +39,7 @@ struct bookrecs: View {
                                 .padding(.vertical, -1.0)
                                 .padding(.trailing, 15.0))
                     NavigationLink(destination: questionOne()) {
+                        
                         Text("Get started")
                             .foregroundColor(.white)
                             .font(.system(size: 18))

@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-struct legsView: View {
-    let situpURL = URL(string: "https://www.youtube.com/watch?v=JB2oyawG9KI&ab_channel=LIVESTRONG.COM")!
-    let plankURL = URL(string: "https://www.youtube.com/watch?time_continue=45&v=aclHkVaku9U&embeds_referring_euri=https%3A%2F%2Fwww.google.com%2F&source_ve_path=MjM4NTE&feature=emb_title&ab_channel=BowFlex")!
-    let crunchesURL = URL(string: "https://www.youtube.com/watch?v=QOVaHwm-Q6U&ab_channel=BowFlex")!
+struct armsView: View {
+    let situpURL = URL(string: "https://www.youtube.com/watch?v=IODxDxX7oi4&ab_channel=Calisthenicmovement")!
+    let plankURL = URL(string: "https://www.youtube.com/watch?v=pSHjTRCQxIw&ab_channel=ScottHermanFitness")!
+    let crunchesURL = URL(string: "https://www.youtube.com/watch?v=140RTNMciH8&ab_channel=FitnessBlender")!
     
     var body: some View {
         
         ZStack {
             
             VStack {
-                Text("LEGS")
+                Text("ARMS")
                     .fontWeight(.bold)
                     .foregroundColor(.black)
                     .font(.system(size: 55))
@@ -28,7 +28,7 @@ struct legsView: View {
                 
                 
                 
-                Text("Welcome to our legs-focused page! Strengthening your legs is crucial for stability, mobility, and overall lower body strength. ")
+                Text("Strengthening your arms is crucial for various daily activities, functional movements, and upper body strength.")
                     .foregroundColor(.black)
                     .font(.system(size: 18))
                     .multilineTextAlignment(.center)
@@ -53,7 +53,7 @@ struct legsView: View {
                 
                 VStack(spacing: 20) {
                     Button(action: openSitupVideo) {
-                        Text("Leg Raises")
+                        Text("Pushups")
                             .foregroundColor(.white)
                             .font(.headline)
                             .padding()
@@ -68,7 +68,7 @@ struct legsView: View {
                         
                     }
                     Button(action: openPlankVideo) {
-                        Text("Squats")
+                        Text("Plank")
                             .foregroundColor(.white)
                             .font(.headline)
                             .padding()
@@ -81,7 +81,7 @@ struct legsView: View {
                         
                     }
                     Button(action: openCrunchVideo) {
-                        Text("Lunges")
+                        Text("Arm Circles")
                             .foregroundColor(.white)
                             .font(.headline)
                             .padding()
