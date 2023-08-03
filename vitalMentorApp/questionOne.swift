@@ -31,40 +31,61 @@ struct questionOne: View {
     } // mystery
     
     var body: some View {
-        NavigationStack {
-            VStack {
-                Text("What is your favorite genre?")
-                    .font(.title)
-                    .fontWeight(.bold)
+        ZStack {
+            LinearGradient(gradient: Gradient(colors: [
+                Color(red: 0.95, green: 0.92, blue: 0.98),
+                Color(red: 0.85, green: 0.78, blue: 0.94),
+                Color(red: 0.8, green: 0.75, blue: 0.95),
+                Color(red: 0.85, green: 0.78, blue: 0.94),
+                Color(red: 0.95, green: 0.92, blue: 0.98)
+            ]), startPoint: .top, endPoint: .bottom)
+            .edgesIgnoringSafeArea(.all)
+            
+            NavigationStack {
+                
+                VStack {
+                    Text("What is your favorite genre?")
+                        .fontWeight(.bold)
+                        .foregroundColor(.black)
+                        .font(.system(size: 45))
+                        .multilineTextAlignment(.center)
+                        .padding(.top, 50)
+                        .padding (.bottom, 20)
+                        .padding(.trailing, 15.0)
                     
-                Button("Dystopian") {
-                    let randomBookD = pickBookD()
-                    print(randomBookD)
-                }
-                .font(.title2)
-                .buttonStyle(.borderedProminent)
-                .tint(.purple)
+                    Button("Dystopian") {
+                        let randomBookD = pickBookD()
+                        print(randomBookD)
+                    }
+                    .font(.title2)
+                    .buttonStyle(.borderedProminent)
+                    .tint(.purple)
+                    
+                    Button("Romance") {
+                        let randomBookR = pickBookR()
+                        print(randomBookR)
+                    }
+                    .font(.title2)
+                    .buttonStyle(.borderedProminent)
+                    .tint(.purple)
+                    
+                    Button("Mystery") {
+                        let randomBookM = pickBookM()
+                        print(randomBookM)
+                    }
+                    .font(.title2)
+                    .buttonStyle(.borderedProminent)
+                    .tint(.purple)
+                    
+                    .padding (.bottom, 20)
+                    .padding (.bottom, 40)
+
+                } //closing vstack
                 
-                Button("Romance") {
-                    let randomBookR = pickBookR()
-                    print(randomBookR)
-                }
-                .font(.title2)
-                .buttonStyle(.borderedProminent)
-                .tint(.purple)
-                
-                Button("Mystery") {
-                    let randomBookM = pickBookM()
-                    print(randomBookM)
-                }
-                .font(.title2)
-                .buttonStyle(.borderedProminent)
-                .tint(.purple)
-                
-                
-            } //closing vstack
-        } // closing nav stack
-    } //some view stack
+            } // closing nav stack
+            
+        }}
+    //some view stack
 }
 
 struct questionOne_Previews: PreviewProvider {
