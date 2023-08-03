@@ -81,6 +81,7 @@ struct questionOne: View {
 
             } // closing nav stack
             .navigationBarHidden(true)
+            
         }}
     //some view stack
 }

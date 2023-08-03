@@ -35,7 +35,7 @@ struct ContentView: View {
                             .padding(-10.0)
                     }
                     HStack{
-                    NavigationLink(destination: absView()) {
+                    NavigationLink(destination: armsView()) {
                         Image("star")
                             .resizable()
                             .contentShape(Rectangle())
@@ -59,7 +59,7 @@ struct ContentView: View {
                             .frame(width: 50.0, height: 50.0)
                             .padding(.top, 20.0)
                         .padding(.leading, 0.0)                    }
-                    NavigationLink(destination: absView()) {
+                    NavigationLink(destination: legsView()) {
                         Image("star")
                             .resizable()
                             .frame(width: 50.0, height: 50.0)
